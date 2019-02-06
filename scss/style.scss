@@ -1,1 +1,6 @@
-@import ../packages/bootstrap-4.2.1/scss/bootstrap.scss;
+@import "../packages/bootstrap-4.2.1/scss/bootstrap";
+
+header {
+    height: 200px;
+    background: #ccc;
+}
