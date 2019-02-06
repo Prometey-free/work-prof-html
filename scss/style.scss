@@ -1,10 +1,58 @@
-@import "../packages/bootstrap-4.2.1/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "variables";
+
+body {
+    background: $bg;
+    font-family: $font;
+}
+
+.content {
+    min-height: calc(100vh - 430px);
+}
 
 header {
     @include media-breakpoint-only(xl) {
         height: 150px;
     }
-    height: 200px;
+
+    height: 150px;
     background: #ccc;
+}
+
+.logo {
+    width: 170px;
+    
+}
+
+.slider {
+    height: 615px;
+    background: #fcc;
+}
+
+.category {
+    height: 825px;
+    background: #cfc;
+}
+
+.product {
+    height: 985px;
+    background: #ccf;
+}
+
+.feature {
+    height: 530px;
+    background: #fcc;
+}
+
+.subscribe {
+    height: 440px;
+    background: #cfc;
+}
+
+.footer {
+    height: 430px;
+    background: #000;
+    footer {
+        height: inherit;
+        background: #fff;
+    }
 }
