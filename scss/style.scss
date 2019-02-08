@@ -1,85 +1,70 @@
 @import "variables";
 
 body {
-    background: $colorWhite;
+    background: $bgBody;
     font-family: $font;
 }
-
 .content {
     min-height: calc(100vh - 430px);
 }
-
 .container {
-    @include media-breakpoint-only(xl) {
         padding: 0;
-    }
 }
-
 header {
-    height: 200px;
-    
-    @include media-breakpoint-only(xl) {
-        height: 150px;
-    }
-    
+    height: 150px;
     .headerUp {
-        height: auto;
-        
-        @include media-breakpoint-only(xl) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 100px;
+        .headerUpLeft {
+            display: flex;
+            justify-content: space-between;
+            width: 610px;
+        }
+        form {
+            width: 405px;
         }
     }
-    
     nav {
-        height: auto;
-        
-        @include media-breakpoint-only(xl) {
         height: 50px;
-        }
     }
 }
-
 .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 170px;
-    height: inherit;
-    p {
-        height: inherit;
+    div {
         text-transform: uppercase;
-        margin: 0;
-        @include font(#222, 27px, 300, 32);
-        
+        font: 300 27px $font;
+        color: $colorMain;
         span {
-            text-transform: uppercase;
-            @include font($colorSecond, 27px, 900, 32);
+            font-weight: 900;
+            color: $colorSecond;
         }
     }
 }
-
 .slider {
     height: 615px;
     background: #fcc;
 }
-
 .category {
     height: 825px;
     background: #cfc;
 }
-
 .product {
     height: 985px;
     background: #ccf;
 }
-
 .feature {
     height: 530px;
     background: #fcc;
 }
-
 .subscribe {
     height: 440px;
     background: #cfc;
 }
-
 .footer {
     height: 430px;
     background: #000;

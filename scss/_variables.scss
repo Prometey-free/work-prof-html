@@ -3,17 +3,10 @@
 
 $font: Lato, sans-serif;
 
-@mixin font($color, $size, $weight, $height) {
-    color: $color;
-    font-size: $size;
-    font-weight: $weight;
-    line-height: $height;
-}
-
 $colorMain: #222;
 $colorSecond: #f16d7f;
-$colorWhite: #fff;
 
+$bgBody: #fff;
 $bgSlider: #e8e8e8;
 $bgProduct: rgba(58, 56, 56, 0.83);
 $bgSubscribe: rgba(242, 242, 242, 0.5);
