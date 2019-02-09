@@ -4,110 +4,170 @@ body {
     background: $bgBody;
     font-family: $font;
 }
+
 .content {
     min-height: calc(100vh - 430px);
 }
+
 .container {
-        padding: 0;
+    padding: 0;
 }
+
 header {
     height: 150px;
+
     .headerUp {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100px;
+
         .headerUpLeft {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 610px;
+
             .input-group {
                 width: 405px;
                 height: 38px;
             }
-            button, input {
+
+            button,
+            input {
                 border-color: $bgSearchBr;
                 font-size: 14px !important;
             }
-            >div:last-child>div:first-child button {
+
+            > div:last-child > div:first-child button {
                 color: $colorMain;
                 background: $bgSlider;
             }
-            >div:last-child>div:first-child button:hover, >div:last-child>div:first-child button:focus {
+
+            > div:last-child > div:first-child button:hover,
+            > div:last-child > div:first-child button:focus {
                 color: $colorMain;
                 background: $bgSlider;
                 box-shadow: none;
             }
-            >div:last-child>div:last-child button, input::placeholder {
+
+            > div:last-child > div:last-child button,
+            input::placeholder {
                 color: $bgSearch;
             }
-            >div:last-child>div:last-child button:hover, >div:last-child>div:last-child button:focus, input {
+
+            > div:last-child > div:last-child button:hover,
+            > div:last-child > div:last-child button:focus,
+            input {
                 box-shadow: none;
             }
+
             .dropdown-menu {
                 span {
                     font-weight: 700;
                     font-size: 14px !important;
+                    text-transform: uppercase;
                 }
+
                 span:not(:first-child) {
                     margin-top: 20px;
                 }
+
                 a {
                     font-size: 14px !important;
                 }
             }
         }
+
         .basket {
             height: 38px;
             width: 188px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+
+            .cart {
+                .btn {
+                    padding: 0;
+
+                    &:focus,
+                    &:active:focus {
+                        box-shadow: none;
+                    }
+                }
+                .productCart {
+                    width: 230px;
+                    display: flex;
+                    
+                    img {
+                        max-width: 72px;
+                    }
+                }
+            }
+
+            .btn-danger {
+                background-color: $colorSecond;
+
+                &:focus,
+                &:active:focus {
+                    box-shadow: none;
+                }
+            }
         }
     }
+
     nav {
         height: 50px;
     }
 }
+
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 170px;
+
     div {
         text-transform: uppercase;
         font: 300 27px $font;
         color: $colorMain;
+
         span {
             font-weight: 900;
             color: $colorSecond;
         }
     }
 }
+
 .slider {
     height: 615px;
     background: #fcc;
 }
+
 .category {
     height: 825px;
     background: #cfc;
 }
+
 .product {
     height: 985px;
     background: #ccf;
 }
+
 .feature {
     height: 530px;
     background: #fcc;
 }
+
 .subscribe {
     height: 440px;
     background: #cfc;
 }
+
 .footer {
     height: 430px;
     background: #000;
+
     footer {
         height: inherit;
         background: #fff;
