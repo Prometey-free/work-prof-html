@@ -87,7 +87,7 @@ header {
             align-items: flex-end;
 
             .cart {
-                .btn {
+                > .btn-group > .btn {
                     padding: 0;
 
                     &:focus,
@@ -95,12 +95,98 @@ header {
                         box-shadow: none;
                     }
                 }
+
                 .productCart {
                     width: 230px;
                     display: flex;
-                    
-                    img {
-                        max-width: 72px;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    a {
+                        flex-basis: 85%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+
+                        img {
+                            max-width: 72px;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+
+                        .signature {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            padding: 5px 10px;
+
+                            span:first-child {
+                                font: 700 12px $font;
+                                color: $colorMain;
+                                text-transform: uppercase;
+                            }
+
+                            span:nth-child(2) {
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: $colorStar;
+                            }
+
+                            span:last-child {
+                                font: 400 12px $font;
+                                color: $colorSecond;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                    .close {
+                        flex-basis: 15%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $colorClose;
+
+                        &:hover {
+                            color: $colorSecond;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    > .sum {
+                        height: 60px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+
+                        span {
+                            text-transform: uppercase;
+                            font: 700 16px $font;
+                            color: $colorMain;
+                        }
+                    }
+                    .dropdown-item>button {
+                        width: 100%;
+                        text-transform: uppercase;
+                        font: 700 14px $font;
+                    }
+                    .dropdown-item:nth-last-child(2) button {
+                        color: $colorSecond;
+                        &:hover {
+                            color: $bgBody;
+                            background: $colorSecond;
+                        }
+                    }
+                    .dropdown-item:nth-last-child(1) button {
+                        color: $colorMain;
+                        &:hover {
+                            color: $bgBody;
+                            background: $colorMain;
+                        }
                     }
                 }
             }

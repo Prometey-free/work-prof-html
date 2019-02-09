@@ -11382,42 +11382,144 @@ header .headerUp .basket {
 }
 
 /* line 90, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
-header .headerUp .basket .cart .btn {
+header .headerUp .basket .cart > .btn-group > .btn {
   padding: 0;
 }
 
 /* line 93, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
-header .headerUp .basket .cart .btn:focus, header .headerUp .basket .cart .btn:active:focus {
+header .headerUp .basket .cart > .btn-group > .btn:focus, header .headerUp .basket .cart > .btn-group > .btn:active:focus {
   box-shadow: none;
 }
 
-/* line 98, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 99, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 header .headerUp .basket .cart .productCart {
   width: 230px;
   display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-/* line 102, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
-header .headerUp .basket .cart .productCart img {
+/* line 105, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a {
+  flex-basis: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* line 111, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a img {
   max-width: 72px;
+  object-fit: cover;
+  object-position: center center;
 }
 
-/* line 108, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 117, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a .signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+/* line 123, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a .signature span:first-child {
+  font: 700 12px Lato, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* line 129, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a .signature span:nth-child(2) {
+  font-weight: 400;
+  font-size: 12px;
+  color: #e4af48;
+}
+
+/* line 135, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart a .signature span:last-child {
+  font: 400 12px Lato, sans-serif;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+/* line 143, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart .close {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+
+/* line 152, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .productCart .close:hover {
+  color: #f16d7f;
+}
+
+/* line 159, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu > .sum {
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* line 166, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu > .sum span {
+  text-transform: uppercase;
+  font: 700 16px Lato, sans-serif;
+  color: #222;
+}
+
+/* line 172, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu .dropdown-item > button {
+  width: 100%;
+  text-transform: uppercase;
+  font: 700 14px Lato, sans-serif;
+}
+
+/* line 177, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu .dropdown-item:nth-last-child(2) button {
+  color: #f16d7f;
+}
+
+/* line 179, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu .dropdown-item:nth-last-child(2) button:hover {
+  color: #fff;
+  background: #f16d7f;
+}
+
+/* line 184, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu .dropdown-item:nth-last-child(1) button {
+  color: #222;
+}
+
+/* line 186, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+header .headerUp .basket .cart .dropdown-menu .dropdown-item:nth-last-child(1) button:hover {
+  color: #fff;
+  background: #222;
+}
+
+/* line 194, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 header .headerUp .basket .btn-danger {
   background-color: #f16d7f;
 }
 
-/* line 111, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 197, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 header .headerUp .basket .btn-danger:focus, header .headerUp .basket .btn-danger:active:focus {
   box-shadow: none;
 }
 
-/* line 119, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 205, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 header nav {
   height: 50px;
 }
 
-/* line 124, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 210, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .logo {
   display: flex;
   justify-content: space-between;
@@ -11425,56 +11527,56 @@ header nav {
   width: 170px;
 }
 
-/* line 130, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 216, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .logo div {
   text-transform: uppercase;
   font: 300 27px Lato, sans-serif;
   color: #222;
 }
 
-/* line 135, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 221, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .logo div span {
   font-weight: 900;
   color: #f16d7f;
 }
 
-/* line 142, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 228, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .slider {
   height: 615px;
   background: #fcc;
 }
 
-/* line 147, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 233, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .category {
   height: 825px;
   background: #cfc;
 }
 
-/* line 152, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 238, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .product {
   height: 985px;
   background: #ccf;
 }
 
-/* line 157, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 243, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .feature {
   height: 530px;
   background: #fcc;
 }
 
-/* line 162, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 248, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .subscribe {
   height: 440px;
   background: #cfc;
 }
 
-/* line 167, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 253, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .footer {
   height: 430px;
   background: #000;
 }
 
-/* line 171, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
+/* line 257, D:/YandexDisk/Книги/Учеба/Профессиональная верстка/ДЗ/Project/work-prof-html/scss/style.scss */
 .footer footer {
   height: inherit;
   background: #fff;
