@@ -28,6 +28,7 @@ header {
             }
             button, input {
                 border-color: $bgSearchBr;
+                font-size: 14px !important;
             }
             >div:last-child>div:first-child button {
                 color: $colorMain;
@@ -43,6 +44,18 @@ header {
             }
             >div:last-child>div:last-child button:hover, >div:last-child>div:last-child button:focus, input {
                 box-shadow: none;
+            }
+            .dropdown-menu {
+                span {
+                    font-weight: 700;
+                    font-size: 14px !important;
+                }
+                span:not(:first-child) {
+                    margin-top: 20px;
+                }
+                a {
+                    font-size: 14px !important;
+                }
             }
         }
     }
