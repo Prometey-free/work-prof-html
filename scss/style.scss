@@ -20,10 +20,30 @@ header {
         .headerUpLeft {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 610px;
-        }
-        form {
-            width: 405px;
+            .input-group {
+                width: 405px;
+                height: 38px;
+            }
+            button, input {
+                border-color: $bgSearchBr;
+            }
+            >div:last-child>div:first-child button {
+                color: $colorMain;
+                background: $bgSlider;
+            }
+            >div:last-child>div:first-child button:hover, >div:last-child>div:first-child button:focus {
+                color: $colorMain;
+                background: $bgSlider;
+                box-shadow: none;
+            }
+            >div:last-child>div:last-child button, input::placeholder {
+                color: $bgSearch;
+            }
+            >div:last-child>div:last-child button:hover, >div:last-child>div:last-child button:focus, input {
+                box-shadow: none;
+            }
         }
     }
     nav {
