@@ -169,20 +169,25 @@ header {
                             color: $colorMain;
                         }
                     }
-                    .dropdown-item>button {
+
+                    .dropdown-item > button {
                         width: 100%;
                         text-transform: uppercase;
                         font: 700 14px $font;
                     }
+
                     .dropdown-item:nth-last-child(2) button {
                         color: $colorSecond;
+
                         &:hover {
                             color: $bgBody;
                             background: $colorSecond;
                         }
                     }
+
                     .dropdown-item:nth-last-child(1) button {
                         color: $colorMain;
+
                         &:hover {
                             color: $bgBody;
                             background: $colorMain;
@@ -202,9 +207,78 @@ header {
         }
     }
 
-    nav {
+    .headerDown {
+        display: flex;
         height: 50px;
         justify-content: center;
+
+        nav {
+            height: 47px;
+            width: 680px;
+            justify-content: space-between;
+
+            > a {
+                font: 700 14px $font;
+                text-transform: uppercase;
+                color: $colorMain;
+                line-height: 31px;
+
+                &:hover {
+                    border-bottom: 3px solid $colorSecond;
+                }
+            }
+
+            .dropdown-toggle::after {
+                border: 0;
+            }
+            
+            .dropdown-menu.show {
+                width: 846px;
+                height: 310px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .dropdown-menu {
+                .section {
+                    width: 255px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    >span {
+                        text-transform: uppercase;
+                        color: $colorMain2;
+                        font: 400 14px $font;
+                        line-height: 28px;
+                        margin-top: 10px;
+                    }
+                    .super-sale {
+                        position: relative;
+                        img {
+                            max-width: 255px;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                        span {
+                            width: 80px;
+                            position: absolute;
+                            top: 60px;
+                            right: 0px;
+                            color: $bgBody;
+                            font: 900 22px $font;
+                            line-height: 28px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                a {
+                    line-height: 1.2;
+                    font: 400 14px $font;
+                    color: $colorSecond2;
+                }
+            }
+        }
     }
 }
 
