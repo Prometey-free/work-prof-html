@@ -231,7 +231,7 @@ header {
             .dropdown-toggle::after {
                 border: 0;
             }
-            
+
             .dropdown-menu.show {
                 width: 846px;
                 height: 310px;
@@ -245,20 +245,24 @@ header {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    >span {
+
+                    > span {
                         text-transform: uppercase;
                         color: $colorMain2;
                         font: 400 14px $font;
                         line-height: 28px;
                         margin-top: 10px;
                     }
+
                     .super-sale {
                         position: relative;
+
                         img {
                             max-width: 255px;
                             object-fit: cover;
                             object-position: center center;
                         }
+
                         span {
                             width: 80px;
                             position: absolute;
@@ -302,7 +306,48 @@ header {
 
 .slider {
     height: 615px;
-    background: #fcc;
+    background: $bgSlider;
+
+    .sliderContent {
+        position: relative;
+        img {
+            width: 100%;
+            height: 615px;
+            object-fit: none;
+            object-position: center bottom;
+        }
+        .signature {
+            width: 510px;
+            position: absolute;
+            top: calc(50% - 90px);
+            left: 0;
+            border-left: 12px solid $colorSecond;
+            padding-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            span {
+                font-weight: 900;
+                letter-spacing: 1.2px;
+                &:first-child {
+                    font-size: 60px;
+                    line-height: 50px;
+                    margin-bottom: 12px;
+                }
+                &:first-child, &:nth-child(3) {
+                    color: $colorMain;
+                }
+                &:nth-child(3), &:last-child {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                &:last-child {
+                    color: $colorSecond;
+                }
+            }
+        }
+    }
 }
 
 .category {
