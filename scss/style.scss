@@ -310,12 +310,14 @@ header {
 
     .sliderContent {
         position: relative;
+
         img {
             width: 100%;
             height: 615px;
             object-fit: none;
             object-position: center bottom;
         }
+
         .signature {
             width: 510px;
             position: absolute;
@@ -327,21 +329,28 @@ header {
             flex-wrap: wrap;
             justify-content: space-between;
             align-content: space-between;
+
             span {
                 font-weight: 900;
                 letter-spacing: 1.2px;
+
                 &:first-child {
                     font-size: 60px;
                     line-height: 50px;
                     margin-bottom: 12px;
                 }
-                &:first-child, &:nth-child(3) {
+
+                &:first-child,
+                &:nth-child(3) {
                     color: $colorMain;
                 }
-                &:nth-child(3), &:last-child {
+
+                &:nth-child(3),
+                &:last-child {
                     font-size: 40px;
                     line-height: 40px;
                 }
+
                 &:last-child {
                     color: $colorSecond;
                 }
@@ -352,7 +361,48 @@ header {
 
 .category {
     height: 825px;
-    background: #cfc;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    .categoryContent {
+        display: block;
+        position: relative;
+        
+        img {
+            width: 560px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .signature {
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            background: $bgBody;
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                text-transform: uppercase;
+                font-weight: 900;
+                &:first-child {
+                    color: $colorMain;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+                &:last-child {
+                    color: $colorSecond;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
 }
 
 .product {
