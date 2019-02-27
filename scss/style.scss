@@ -371,7 +371,7 @@ header {
     .categoryContent {
         display: block;
         position: relative;
-        
+
         img {
             width: 560px;
             object-fit: cover;
@@ -390,11 +390,13 @@ header {
             span {
                 text-transform: uppercase;
                 font-weight: 900;
+
                 &:first-child {
                     color: $colorMain;
                     font-size: 18px;
                     line-height: 18px;
                 }
+
                 &:last-child {
                     color: $colorSecond;
                     font-size: 30px;
@@ -407,7 +409,128 @@ header {
 
 .product {
     height: 985px;
-    background: #ccf;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    > .signature {
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+            color: $colorMain;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.75px;
+            text-align: center;
+        }
+
+        span:last-child {
+            color: #9f9f9f;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.35px;
+            text-align: center;
+        }
+    }
+
+    .productContent {
+        height: 745px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+        .item {
+            position: relative;
+            height: 364px;
+            width: 260px;
+
+            .featuredItem {
+                height: 100%;
+            
+                img {
+                    width: 260px;
+                    height: 280px;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+
+                .signature {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: calc(100% - 280px);
+                    padding: 0 15px;
+
+                    span:first-child {
+                        color: $colorMain;
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+
+                    span:last-child {
+                        color: $colorSecond;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .itemHover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 280px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                background: $bgProduct;
+                a{
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                    text-decoration: none;
+                    color: $bgBody;
+                    font-size: 13px;
+                    font-weight: 700;
+                    padding: 0 13px;
+                    border: 1px solid $bgBody;
+                    span{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            &:hover .itemHover {
+                display: flex;
+            }
+            &:hover {
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+    .productButton {
+        color: $bgBody;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 0 20px;
+        height: 50px;
+        border: none;
+        background: $colorSecond;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            box-shadow: none;
+        }
+    }
 }
 
 .feature {
